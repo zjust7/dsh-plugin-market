@@ -203,6 +203,9 @@ Host 半边是 `index.js`，浏览器半边是 `client.js`（无构建步骤，�
 | [docs/DESIGN-0.09.md](docs/DESIGN-0.09.md) | 一次 UI 评审的设计决策记录 |
 | [docs/RELEASE-CHECKLIST.md](docs/RELEASE-CHECKLIST.md) | 发布前检查清单 |
 
+## 目前问题
+下载在插件暂时无法自动更新，因为我也不知道怎么修。
+
 ## 许可证
 
 MIT
