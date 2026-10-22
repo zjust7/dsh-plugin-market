@@ -1,0 +1,10 @@
+# Bundle patch for dsh-plugin-market.
+#
+# `insert` adds one Host row at the profile root, beside the shipped rows.
+# Every config field is optional; see README.md for the defaults.
+- insert:
+    - id: local-plugin-market
+      name: 'dsh-plugin-market'
+      config:
+        catalogTimeoutMs: 45000
+        searchTimeoutMs: 15000

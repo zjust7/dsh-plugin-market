@@ -1,0 +1,60 @@
+{
+  "name": "dsh-plugin-market",
+  "version": "0.10.0",
+  "private": true,
+  "type": "module",
+  "description": "A plugin market inside DeepSeek Harness: search 6000+ DSH plugins, see each one's independent review verdict, audit tier, capabilities and scanner red lines before installing, and get stopped when an independent review judged it harmful.",
+  "license": "MIT",
+  "author": "zjust7",
+  "homepage": "https://github.com/zjust7/dsh-plugin-market#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zjust7/dsh-plugin-market.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zjust7/dsh-plugin-market/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "plugin-market"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale/*.json",
+    "README.md",
+    "README.en.md",
+    "CHANGELOG.md",
+    "docs/",
+    "LICENSE",
+    "data/reviews.json"
+  ],
+  "scripts": {
+    "test": "node smoke-host.mjs && node verify-host.mjs && node verify-hooks.mjs && node verify-states.mjs && node verify-update.mjs && node verify-safety.mjs",
+    "test:offline": "node smoke-host.mjs && DSH_MARKET_OFFLINE=1 node verify-host.mjs && node verify-hooks.mjs && node verify-states.mjs && node verify-update.mjs && node verify-safety.mjs"
+  },
+  "icon": "./icon.svg",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}
