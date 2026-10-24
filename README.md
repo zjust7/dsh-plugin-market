@@ -1,5 +1,4 @@
 # dsh-plugin-market
-dsh  deepseek-harness  cordis  plugin-market  plugin-manager
 一个长在 DeepSeek Harness 里的插件市场。搜到插件之后，**在点「安装」之前**就能看到独立测评给出的判定、审计档位、功能清单和安全红线，搜 6000+ 插件，装之前就能看到独立测评的判定、审计档位、能力清单与安全红线。
 
 **中文** | [English](README.en.md)
